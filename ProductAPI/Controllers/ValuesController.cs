@@ -29,5 +29,15 @@ namespace ProductAPI.Controllers
         [HttpPost]
         public void Post([FromBody] string value)
         {}
+
+        // DELETE: api/TodoItems/5
+        [HttpDelete("{id}")]
+        public IEnumerable<string> Delete(int id)
+        {
+            return new string[] {"delete"};
+        }
+
+        
+
     }
 }
